@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yousef Mamdouh Saleh — Mechatronics Engineering x UI/UX Design</title>
+  <meta name="description" content="Yousef Mamdouh Saleh — Level 5 Mechatronics Engineering Student at MUST and UI/UX Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">YMS.</div>
+      <div class="preloader-bar"><div class="preloader-fill" id="preloader-fill"></div></div>
+      <div class="preloader-label">INITIALIZING SYSTEM <span id="preloader-pct">0</span>%</div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">YMS.</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#work" class="nav-link" data-section="work">Work</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-talk">Let''s Talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="blueprint-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-meta reveal-up">
+          <span class="dot-pulse"></span>
+          <span>Cairo, Egypt</span>
+          <span class="sep">·</span>
+          <span>MUST — Level 05</span>
+        </div>
+        <p class="hero-hi reveal-up">Hi, I am</p>
+        <h1 class="hero-name reveal-up">
+          <span class="name-line">Yousef</span>
+          <span class="name-line accent">Mamdouh.</span>
+        </h1>
+        <div class="hero-discipline reveal-up">
+          <span class="discipline-tag">MECHATRONICS</span>
+          <span class="discipline-x">×</span>
+          <span class="discipline-tag">UI/UX DESIGN</span>
+        </div>
+        <p class="hero-desc reveal-up">Engineering systems. Designing experiences.</p>
+        <div class="hero-ctas reveal-up">
+          <a href="#work" class="btn-primary" id="hero-view-work">View My Work <span>→</span></a>
+          <a href="https://www.behance.net/yousefhamouda15" target="_blank" rel="noopener" class="btn-secondary" id="hero-behance">Behance ↗</a>
+        </div>
+        <div class="hero-socials reveal-up">
+          <a href="https://www.linkedin.com/in/yousef-mamdoh-861b90413" target="_blank" rel="noopener" class="social-pill" id="hero-linkedin">LinkedIn</a>
+          <a href="https://www.behance.net/yousefhamouda15" target="_blank" rel="noopener" class="social-pill" id="hero-behance-pill">Behance</a>
+          <span class="availability-badge"><span class="dot-pulse sm"></span> Open to opportunities</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame" id="photo-frame">
+          <div class="corner tl"></div>
+          <div class="corner tr"></div>
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
+          <div class="dim-line dim-top">
+            <span class="dim-tick"></span>
+            <span class="dim-value">MECH / 01</span>
+            <span class="dim-tick"></span>
+          </div>
+          <div class="dim-line dim-right">
+            <span class="dim-tick v"></span>
+            <span class="dim-value">YMS</span>
+            <span class="dim-tick v"></span>
+          </div>
+          <img src="yousef p.jpeg" alt="Yousef Mamdouh Saleh — Mechatronics Engineer and UI/UX Designer" class="hero-photo" id="hero-photo" />
+          <div class="photo-tag">
+            <span class="photo-tag-name">Yousef Mamdouh Saleh</span>
+            <span class="photo-tag-role">Mechatronics Eng. · UI/UX Designer</span>
+          </div>
+        </div>
+        <div class="float-bubble b1">Arduino</div>
+        <div class="float-bubble b2">SolidWorks</div>
+        <div class="float-bubble b3">Figma</div>
+        <div class="float-bubble b4">MATLAB</div>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <span>MECHATRONICS ENG.</span><span class="strip-dot">◆</span>
+      <span>UI/UX DESIGN</span><span class="strip-dot">◆</span>
+      <span>MUST — 2026</span><span class="strip-dot">◆</span>
+      <span>CAIRO, EGYPT</span><span class="strip-dot">◆</span>
+      <span>MECHATRONICS ENG.</span><span class="strip-dot">◆</span>
+      <span>UI/UX DESIGN</span><span class="strip-dot">◆</span>
+      <span>MUST — 2026</span><span class="strip-dot">◆</span>
+      <span>CAIRO, EGYPT</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">01 /</span><span>ABOUT</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-headline">
+          <h2 class="reveal-up">ENGINEERED<br/>TO SOLVE.</h2>
+          <h2 class="reveal-up accent-h2">DESIGNED<br/>TO CONNECT.</h2>
+        </div>
+        <div class="about-content">
+          <p class="about-bio reveal-up">
+            Yousef Mamdouh Saleh is a Level 5 Mechatronics Engineering student at
+            <strong>Misr University for Science and Technology (MUST)</strong>,
+            combining rigorous engineering problem-solving with creative UI/UX design.
+          </p>
+          <p class="about-bio reveal-up">
+            His work bridges the physical and digital — from designing robotic mechanisms
+            and embedded systems to crafting intuitive digital interfaces.
+          </p>
+          <div class="about-meta reveal-up">
+            <div class="meta-item">
+              <span class="meta-label">DISCIPLINE</span>
+              <span class="meta-value">Mechatronics Engineering</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">LEVEL</span>
+              <span class="meta-value">Level 05</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">UNIVERSITY</span>
+              <span class="meta-value">MUST</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">DESIGN</span>
+              <span class="meta-value">UI/UX</span>
+            </div>
+          </div>
+          <div class="about-tags reveal-up">
+            <span class="tag">Robotics</span>
+            <span class="tag">CAD Design</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">UX Research</span>
+            <span class="tag">Control Systems</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+      </div>
+      <div class="spec-panel reveal-up">
+        <div class="spec-item">
+          <span class="spec-num">05</span>
+          <span class="spec-label">Academic Level</span>
+          <span class="spec-sub">Mechatronics Eng.</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-num">2</span>
+          <span class="spec-label">Disciplines</span>
+          <span class="spec-sub">Engineering · Design</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-num">4+</span>
+          <span class="spec-label">Projects Built</span>
+          <span class="spec-sub">Mech + Digital</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+          <span class="spec-num">∞</span>
+          <span class="spec-label">Problem Space</span>
+          <span class="spec-sub">Physical → Digital</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGINEERING IDENTITY -->
+  <section class="eng-identity">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">ENGINEERING / 01</span>
+      </div>
+      <div class="eng-big-text reveal-up">MECHATRONICS</div>
+      <div class="eng-diagram reveal-up">
+        <svg class="eng-svg" viewBox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="60" y1="190" x2="60" y2="140" stroke="#1e6ef4" stroke-width="2"/>
+          <circle cx="60" cy="140" r="9" stroke="#1e6ef4" stroke-width="2"/>
+          <line x1="60" y1="140" x2="155" y2="95" stroke="#1e6ef4" stroke-width="2.5"/>
+          <circle cx="155" cy="95" r="9" stroke="#1e6ef4" stroke-width="2"/>
+          <line x1="155" y1="95" x2="240" y2="65" stroke="#1e6ef4" stroke-width="2.5"/>
+          <circle cx="240" cy="65" r="9" stroke="#1e6ef4" stroke-width="2"/>
+          <line x1="240" y1="65" x2="295" y2="45" stroke="#1e6ef4" stroke-width="2"/>
+          <circle cx="295" cy="45" r="5" stroke="#1e6ef4" stroke-width="2" fill="#1e6ef420"/>
+          <line x1="295" y1="45" x2="313" y2="28" stroke="#1e6ef4" stroke-width="1.5"/>
+          <line x1="295" y1="45" x2="313" y2="62" stroke="#1e6ef4" stroke-width="1.5"/>
+          <rect x="28" y="188" width="64" height="12" stroke="#1e6ef4" stroke-width="1.5" rx="2"/>
+          <line x1="60" y1="210" x2="295" y2="210" stroke="#1e6ef430" stroke-width="0.8" stroke-dasharray="4,3"/>
+          <text x="177" y="218" fill="#1e6ef480" font-size="8" text-anchor="middle" font-family="Space Mono,monospace">L = 235mm</text>
+          <circle cx="390" cy="90" r="32" stroke="#ffffff15" stroke-width="1.5" stroke-dasharray="5,4"/>
+          <circle cx="390" cy="90" r="13" stroke="#1e6ef450" stroke-width="1.5"/>
+          <circle cx="390" cy="90" r="4" fill="#1e6ef4"/>
+          <line x1="390" y1="55" x2="390" y2="40" stroke="#ffffff25" stroke-width="1.5"/>
+          <line x1="390" y1="125" x2="390" y2="140" stroke="#ffffff25" stroke-width="1.5"/>
+          <line x1="355" y1="90" x2="340" y2="90" stroke="#ffffff25" stroke-width="1.5"/>
+          <line x1="425" y1="90" x2="440" y2="90" stroke="#ffffff25" stroke-width="1.5"/>
+          <text x="390" y="158" fill="#ffffff30" font-size="7" text-anchor="middle" font-family="Space Mono,monospace">Ø64mm SPUR GEAR</text>
+          <line x1="480" y1="120" x2="545" y2="120" stroke="#1e6ef440" stroke-width="1"/>
+          <line x1="545" y1="120" x2="545" y2="90" stroke="#1e6ef440" stroke-width="1"/>
+          <line x1="545" y1="90" x2="580" y2="90" stroke="#1e6ef440" stroke-width="1"/>
+          <circle cx="545" cy="120" r="3" fill="#1e6ef4"/>
+          <circle cx="545" cy="90" r="3" fill="#1e6ef4"/>
+          <rect x="490" y="45" width="70" height="40" rx="3" stroke="#1e6ef450" stroke-width="1.5"/>
+          <text x="525" y="70" fill="#1e6ef4" font-size="8" text-anchor="middle" font-family="Space Mono,monospace">MCU</text>
+          <line x1="490" y1="55" x2="478" y2="55" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="490" y1="63" x2="478" y2="63" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="490" y1="71" x2="478" y2="71" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="560" y1="55" x2="572" y2="55" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="560" y1="63" x2="572" y2="63" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="560" y1="71" x2="572" y2="71" stroke="#1e6ef430" stroke-width="1"/>
+          <line x1="540" y1="20" x2="585" y2="20" stroke="#1e6ef420" stroke-width="1"/>
+          <line x1="540" y1="20" x2="540" y2="0" stroke="#1e6ef420" stroke-width="1"/>
+          <text x="588" y="23" fill="#1e6ef450" font-size="7" font-family="Space Mono,monospace">X+</text>
+          <text x="537" y="-4" fill="#1e6ef450" font-size="7" font-family="Space Mono,monospace">Y+</text>
+        </svg>
+      </div>
+      <div class="eng-labels reveal-up">
+        <div class="eng-label-item">
+          <span class="elabel-icon">⚙</span>
+          <div>
+            <span class="elabel-name">Mechanical</span>
+            <span class="elabel-sub">CAD · SolidWorks · Design</span>
+          </div>
+        </div>
+        <div class="eng-label-item">
+          <span class="elabel-icon">⚡</span>
+          <div>
+            <span class="elabel-name">Electronics</span>
+            <span class="elabel-sub">Arduino · Sensors · PCB</span>
+          </div>
+        </div>
+        <div class="eng-label-item">
+          <span class="elabel-icon">🤖</span>
+          <div>
+            <span class="elabel-name">Robotics</span>
+            <span class="elabel-sub">Mechanisms · Automation</span>
+          </div>
+        </div>
+        <div class="eng-label-item">
+          <span class="elabel-icon">🧮</span>
+          <div>
+            <span class="elabel-name">Control</span>
+            <span class="elabel-sub">MATLAB · Simulink</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">03 /</span><span>SELECTED WORK</span>
+      </div>
+      <h2 class="section-headline reveal-up">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal-up">Engineering solutions and digital experiences — built with purpose.</p>
+
+      <article class="project-card reveal-up" id="project-01">
+        <div class="project-visual pv-robotics">
+          <img src="img-robotics.jpg" alt="Smart Robotic Arm — Arduino controlled 3DOF robotic arm" class="proj-img" loading="lazy" />
+          <div class="pv-overlay"></div>
+          <div class="project-num">01</div>
+          <div class="project-badge">MECHATRONICS</div>
+        </div>
+        <div class="project-info">
+          <div class="project-category">ROBOTICS · CONTROL SYSTEM</div>
+          <h3 class="project-title">Smart Robotic Arm</h3>
+          <p class="project-desc">A multi-DOF robotic arm controlled via Arduino with real-time position feedback and inverse kinematics in MATLAB for trajectory planning.</p>
+          <div class="project-tech">
+            <span>Arduino</span><span>MATLAB</span><span>Servo Motors</span><span>C++</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up card-reverse" id="project-02">
+        <div class="project-visual pv-automation">
+          <img src="img-automation.jpg" alt="Automated Sorting System — Conveyor belt with PID control" class="proj-img" loading="lazy" />
+          <div class="pv-overlay"></div>
+          <div class="project-num">02</div>
+          <div class="project-badge">AUTOMATION</div>
+        </div>
+        <div class="project-info">
+          <div class="project-category">AUTOMATION · CONTROL</div>
+          <h3 class="project-title">Automated Sorting System</h3>
+          <p class="project-desc">Conveyor-belt sorting system using color and proximity sensors with PID control for precise motor speed regulation and object classification.</p>
+          <div class="project-tech">
+            <span>Arduino</span><span>MATLAB</span><span>PID Control</span><span>Sensors</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up" id="project-03">
+        <div class="project-visual pv-cad">
+          <img src="img-cad.jpg" alt="Mechanical Product Design — SolidWorks gear assembly with FEA" class="proj-img" loading="lazy" />
+          <div class="pv-overlay"></div>
+          <div class="project-num">03</div>
+          <div class="project-badge">CAD</div>
+        </div>
+        <div class="project-info">
+          <div class="project-category">CAD · MECHANICAL ENGINEERING</div>
+          <h3 class="project-title">Mechanical Product Design</h3>
+          <p class="project-desc">Full mechanical product design lifecycle — from concept sketches and 3D parametric modelling in SolidWorks to technical drawings and stress analysis.</p>
+          <div class="project-tech">
+            <span>SolidWorks</span><span>AutoCAD</span><span>FEA</span><span>GD&amp;T</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up card-reverse" id="project-04">
+        <div class="project-visual pv-ux">
+          <img src="img-uxui.jpg" alt="Digital Product Experience — Figma UI/UX design case study" class="proj-img" loading="lazy" />
+          <div class="pv-overlay"></div>
+          <div class="project-num">04</div>
+          <div class="project-badge">UI/UX</div>
+        </div>
+        <div class="project-info">
+          <div class="project-category">UI/UX DESIGN</div>
+          <h3 class="project-title">Digital Product Experience</h3>
+          <p class="project-desc">End-to-end digital product design — user research, information architecture, wireframing, high-fidelity UI, and interactive prototyping.</p>
+          <div class="project-tech">
+            <span>Figma</span><span>UX Research</span><span>Prototyping</span><span>Design Systems</span>
+          </div>
+          <a href="https://www.behance.net/yousefhamouda15" target="_blank" rel="noopener" class="project-link" id="project-04-behance">View on Behance ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- UX SECTION -->
+  <section class="ux-section">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">DIGITAL DESIGN / 02</span>
+      </div>
+      <div class="ux-grid">
+        <div class="ux-left">
+          <h2 class="reveal-up">Design that<br/><span class="accent">thinks.</span></h2>
+          <p class="reveal-up">UI/UX informed by engineering thinking — systematic, structured, human-centered. Every decision is backed by research and validated through iteration.</p>
+          <div class="ux-process reveal-up">
+            <div class="ux-step"><span class="ux-step-num">01</span><span>UX Research</span></div>
+            <div class="ux-step"><span class="ux-step-num">02</span><span>Wireframes</span></div>
+            <div class="ux-step"><span class="ux-step-num">03</span><span>UI Design</span></div>
+            <div class="ux-step"><span class="ux-step-num">04</span><span>Prototyping</span></div>
+            <div class="ux-step"><span class="ux-step-num">05</span><span>Design Systems</span></div>
+          </div>
+          <a href="https://www.behance.net/yousefhamouda15" target="_blank" rel="noopener" class="btn-primary reveal-up" id="ux-behance-btn">View Behance ↗</a>
+        </div>
+        <div class="ux-right reveal-up">
+          <div class="ux-mockup">
+            <div class="mockup-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="mockup-url">yousef.design / portfolio</span>
+            </div>
+            <div class="mockup-screen">
+              <div class="mock-hero-block">
+                <div class="mock-line long ab"></div>
+                <div class="mock-line medium"></div>
+                <div class="mock-line short"></div>
+              </div>
+              <div class="mock-grid">
+                <div class="mock-card"></div>
+                <div class="mock-card ab-border"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+              <div class="mock-nav-strip">
+                <div class="mock-nav-dot active"></div>
+                <div class="mock-nav-dot"></div>
+                <div class="mock-nav-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ux-annotation">
+            <span class="ann-tick"></span>
+            <span>Wireframe · UX Flow · UI System</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION -->
+  <section class="transition-section">
+    <div class="section-inner">
+      <div class="ts-flow reveal-up">
+        <span>MECHANICAL</span><span class="flow-arrow">→</span>
+        <span>ELECTRONIC</span><span class="flow-arrow">→</span>
+        <span>CONTROL</span><span class="flow-arrow">→</span>
+        <span>INTERACTION</span><span class="flow-arrow">→</span>
+        <span class="accent">EXPERIENCE</span>
+      </div>
+      <h2 class="ts-headline reveal-up">BUILD SYSTEMS.<br/><span class="accent">DESIGN EXPERIENCES.</span></h2>
+      <p class="ts-sub reveal-up">From physical mechanisms to digital interfaces — the same engineering discipline drives both worlds.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">05 /</span><span>SKILLS</span>
+      </div>
+      <h2 class="section-headline reveal-up">Technical <span class="accent">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal-up">
+          <div class="skill-group-header">
+            <span class="sg-num">ENGINEERING</span>
+            <span class="sg-line"></span>
+          </div>
+          <ul class="skill-list">
+            <li><span class="sk-dot"></span>Arduino & Embedded C</li>
+            <li><span class="sk-dot"></span>MATLAB / Simulink</li>
+            <li><span class="sk-dot"></span>SolidWorks</li>
+            <li><span class="sk-dot"></span>AutoCAD</li>
+            <li><span class="sk-dot"></span>Control Systems</li>
+            <li><span class="sk-dot"></span>Robotics & Automation</li>
+            <li><span class="sk-dot"></span>Electronics & PCB</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal-up">
+          <div class="skill-group-header">
+            <span class="sg-num">UI/UX DESIGN</span>
+            <span class="sg-line"></span>
+          </div>
+          <ul class="skill-list">
+            <li><span class="sk-dot ad"></span>Figma</li>
+            <li><span class="sk-dot ad"></span>UX Research</li>
+            <li><span class="sk-dot ad"></span>Wireframing</li>
+            <li><span class="sk-dot ad"></span>Prototyping</li>
+            <li><span class="sk-dot ad"></span>Design Systems</li>
+            <li><span class="sk-dot ad"></span>UI Design</li>
+            <li><span class="sk-dot ad"></span>User Testing</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal-up">
+          <div class="skill-group-header">
+            <span class="sg-num">TOOLS</span>
+            <span class="sg-line"></span>
+          </div>
+          <ul class="skill-list">
+            <li><span class="sk-dot"></span>C / C++</li>
+            <li><span class="sk-dot"></span>Python</li>
+            <li><span class="sk-dot"></span>Git & GitHub</li>
+            <li><span class="sk-dot"></span>Agile / Scrum</li>
+            <li><span class="sk-dot"></span>3D Printing</li>
+            <li><span class="sk-dot"></span>Technical Documentation</li>
+            <li><span class="sk-dot"></span>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tech-tags reveal-up">
+        <span class="tech-tag">Arduino</span>
+        <span class="tech-tag">MATLAB</span>
+        <span class="tech-tag">SolidWorks</span>
+        <span class="tech-tag">AutoCAD</span>
+        <span class="tech-tag">Figma</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Simulink</span>
+        <span class="tech-tag">Embedded C</span>
+        <span class="tech-tag">UX Research</span>
+        <span class="tech-tag">Design Systems</span>
+        <span class="tech-tag">Prototyping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="label-num">07 /</span><span>CONTACT</span>
+      </div>
+      <h2 class="contact-headline reveal-up">
+        LET''S BUILD<br/><span class="accent">SOMETHING</span><br/>SMART.
+      </h2>
+      <p class="contact-sub reveal-up">Mechatronics engineering, digital products, and creative problem solving.</p>
+      <div class="contact-links reveal-up">
+        <a href="https://www.linkedin.com/in/yousef-mamdoh-861b90413" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+          <div class="cl-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+          <div class="cl-info"><span class="cl-label">LinkedIn</span><span class="cl-handle">yousef-mamdoh</span></div>
+          <span class="cl-arrow">↗</span>
+        </a>
+        <a href="https://www.behance.net/yousefhamouda15" target="_blank" rel="noopener" class="contact-link" id="contact-behance">
+          <div class="cl-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.726-3h3.543c-.073-1.073-.521-1.73-1.547-1.73-.994 0-1.868.699-1.996 1.73zm-10.818 1h3.818v-5h-3.818v5zm3.818-7H7.182V9H6v11h4.818A3.183 3.183 0 0014 16.818v-.001C14 14.433 12.567 13 10.818 13zm-.818 5.818c0 .652-.53 1.182-1.182 1.182H9v-2h1.818A1.182 1.182 0 0110 18.818zM7 11h2.636C10.415 11 11 11.587 11 12.364c0 .778-.585 1.364-1.364 1.364H7V11z"/></svg></div>
+          <div class="cl-info"><span class="cl-label">Behance</span><span class="cl-handle">yousefhamouda15</span></div>
+          <span class="cl-arrow">↗</span>
+        </a>
+      </div>
+      <div class="contact-availability reveal-up">
+        <span class="dot-pulse"></span>
+        <span>Open to internships, freelance projects, and collaborations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">YMS.</span>
+        <p>Yousef Mamdouh Saleh<br/>Mechatronics Engineering Student · UI/UX Designer<br/>Misr University for Science and Technology</p>
+      </div>
+      <div class="footer-nav">
+        <span class="footer-nav-label">NAVIGATION</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <span class="footer-nav-label">CONNECT</span>
+        <a href="https://www.linkedin.com/in/yousef-mamdoh-861b90413" target="_blank">LinkedIn ↗</a>
+        <a href="https://www.behance.net/yousefhamouda15" target="_blank">Behance ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Yousef Mamdouh Saleh</span>
+      <span>MECHATRONICS ENGINEERING × UI/UX DESIGN</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
